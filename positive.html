@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+<style>
+    /*
+    #btn{
+        background-color: red;;
+        color: white;
+
+    }
+    .color{
+        background-color: gray;
+        color:white;
+
+    }
+    .dim{
+       border: 1px red solid;
+       padding: 100px;
+    }
+    */
+</style>
+</head>
+<body>
+
+   <!--
+    <h1>Javascript Here.</h1>
+    <script src="Javascript_Code/script.js"></script>
+   -->
+
+   <!--
+   <ul>
+    <li class="cl">List 1</li>
+    <li id="first">List 2</li>
+    <li class="cl">List 3</li>
+   </ul>
+
+   <h2 class="intro">heading 1</h2>
+   <div id="div1">
+
+   <p class="intro">paragraph 1</p>
+   <h2 class="intro">heading 2</h2>
+   <p>paragraph 2</p>
+   <h2>heading 3</h2>
+   <p class="intro">paragraph 3</p>
+
+   </div>
+
+-->
+
+<!--
+<ul>
+    <li id="intro">list 1</li>
+    <li> list 2</li>
+    <li> list 3</li>
+    <li> list 4</li>
+</ul>
+
+<ul>
+    <li>list a</li>
+    <li> list b</li>
+    <li> list c</li>
+    <li> list d</li>
+</ul>
+
+-->
+
+<!--
+<ul id="intro">
+    <li>list 1</li>
+    <li> list 2</li>
+    <li> list 3</li>
+    <li> list 4</li>
+</ul>
+
+<ul>
+    <li>list a</li>
+    <li> list b</li>
+    <li> list c</li>
+    <li> list d</li>
+</ul>
+
+-->
+
+<!--
+<ul>
+    <li>list 1</li>
+    <li id="intro"> list 2</li>
+    <li> list 3</li>
+    <li> list 4</li>
+</ul>
+
+<ul>
+    <li>list a</li>
+    <li> list b</li>
+    <li> list c</li>
+    <li> list d</li>
+</ul>
+-->
+
+<!---
+<div id="intro">
+    <p>Hello this is a p tag</p>
+</div>
+-->
+
+<!---
+<div id="intro">
+    <p id="p1">Hello this a p tag</p>
+</div>
+
+-->
+
+<!--
+<ul id="list">
+    <li>list 1</li>
+    <li>list 2</li>
+    <li>list 3</li>
+    <li>list 4</li>
+</ul>
+
+-->
+
+<!---
+<ul id="list">
+   
+    <li>list 1</li>
+ 
+    <li>list 2</li>
+  
+    <li>list 3</li>
+
+    <li>list 4</li>
+
+</ul>
+
+-->
+
+<!---
+<ul id="menu">
+    <li>Home</li>
+    <li>Product</li>
+    <li>About Us</li>
+</ul>
+
+-->
+
+<!---
+<ul id="tick">
+    <li>Home</li>
+    <li>Product</li>
+    <li>About Us</li>
+</ul>
+
+-->
+<!--
+<ul id="pk">
+    <li>Home</li>
+    <li>Product</li>
+    <li>About Us</li>
+</ul>
+
+-->
+
+<!--
+beforebegin
+<div id="solid"> Selected
+    afterbegin
+    <h2>Heading</h2>
+    <p> This is a p tag</p>
+    beforeend
+</div>
+afterend
+
+-->
+
+<!--
+<button id="btn" name="form1" style="color: blue;">Send</button>
+-->
+
+<!--
+<div id="box" class="color dim">
+    <p>This is dummy text.</p>
+</div>
+
+-->
+
+<!--
+<button id="noor" onclick="noorClick()">Click Me! </button>
+-->
+
+<button id="text" >Click Here</button>
+<script>
+    /*
+     //select an element by "ID"
+
+    let elm = document.getElementById("first");
+    
+    elm.innerHTML = "<p> Hello</p>";
+
+    */
+
+   // select an element by "class"s
+/*
+    let elm = document.getElementsByClassName("cl");
+
+    for(let i=0; i < elm.length; i++){
+    elm[i].innerHTML = "<p> Hello </p>";
+    }
+    */
+
+   // Select element by "Tag Name"
+/*
+   let elm = document.getElementsByTagName("h2");
+   for(let i=0; i < elm.length; i++){
+    elm[i].innerHTML = "Hello";
+   }
+   */
+  /*
+    let div1 = document.getElementById("div1");
+    let elm = div1.getElementsByTagName("h2");
+
+   for(let i=0; i < elm.length; i++){
+    elm[i].innerHTML = "Hello";
+   }
+
+*/
+
+// Query Selector for only one element 
+// for one 
+/*
+let elm = document.querySelector("p.intro");
+elm.innerHTML = "Hello";
+*/
+
+// for more, here queryselector used in class, id, tag and other..
+/*
+let elm = document.querySelectorAll("p.intro");
+
+for(let i=0; i < elm.length; i++){
+    elm[i].innerHTML = "Hello";
+}
+*/
+
+// Traversing Elements
+/*
+let elm = document.getElementById("intro");
+let prt = elm.parentElement;// here ul is the parent element will be seleted
+prt.innerHTML = "Hello";
+console.log(prt);
+*/
+
+/*
+let elm = document.getElementById("intro");
+//let node = elm.firstElementChild;// first child selection
+//let node = elm.lastElementChild;// last child selection
+
+let node= elm.children;// fot all childs selection
+for(i = 0; i < node.length; i++){
+    node[i].innerHTML = "Hello";
+}
+
+console.log(node);
+
+*/
+
+/*
+let elm = document.getElementById("intro");
+// let node = elm.previousElementSibling;
+   let node = elm.nextElementSibling;
+
+console.log(node);
+
+*/
+
+// innerHTML
+/*
+let elm = document.getElementById("intro");
+
+//let content = elm.innerHTML; // fetched by innerHTML also, innerHTML ek property hai.
+//console.log(content);
+
+elm.innerHTML = "<h1>this is a heading </h1>";
+*/
+
+// Create and Append Elemnt
+
+/*
+
+let elm = document.getElementById("intro");
+let h1 = document.createElement('h1');
+
+h1.className = "try pi"; // class bhi laga sakate hai
+h1.id = "intro1";// id add karata sakate hai
+
+// elm.appendChild(h1);
+// let text = document.createTextNode("This is a h1 tag"); method use karake kiya hai
+// h1.appendChild(text);
+
+h1.textContent = "content added"; // here proporty use karake kiya hai
+
+document.body.appendChild(h1);
+
+let pra = document.getElementById("p1");
+console/log("pra.textcontent");
+
+*/
+
+/*
+let list1 = document.getElementById("list");
+let item = document.createElement('li');
+item.textContent = "new list 5";
+
+list1.appendchild(item);
+
+*/
+/*
+let list1 = document.getElementById("list"); // parent
+let item = document.createElement('li');
+item.textContent = "new list 5";
+
+// let pos = list1.firstElementChild;  // at list 1
+// let pos = list1.firstElementChild.nextElementSibling; // at list 2
+let pos = list1.firstElementChild.nextElementSibling.nextElementSibling; // at list 3
+
+list1.insertBefore(item, pos);
+*/
+
+/*
+let parent = document.body;
+let elm = document.createElement("h2");
+elm.textContent = "this is new element";
+
+let list = document.getElementById("list");
+
+parent.insertBefore(elm, list);
+
+*/
+
+// remove child
+/*
+let parent = document.getElementById("menu");
+let elm = parent.firstElementChild.nextElementSibling;// product ko remove karega
+console.log(elm);
+
+// parent.removeChild(elm);
+
+document.body.removeChild(parent);
+*/
+
+// clone karana means copy karana
+
+/*
+let tick = document.getElementById("tick");
+
+let cloneeElm = tick.cloneNode(true); // true nahi likha to parent element copy hota hai like here ul
+// console.log(cloneeElm);
+
+cloneeElm.id = "mobile-tick";
+document.body.appendChild(cloneeElm);
+*/
+
+// replace element
+
+/*
+let parent = document.getElementById("pk");
+
+let item = document.createElement("li");
+item.textContent = "Services";
+
+let replace = parent.firstElementChild.nextElementSibling;
+
+parent.replaceChild(item, replace);
+*/
+/*
+
+let elm = document.getElementById("solid");
+let html = "<h2>New h1</h2>";
+elm.insertAdjacentHTML('beforeend', html);
+*/
+
+
+//let btn = document.getElementById("btn");
+ // btn.setAttribute("class", "form1"); properties add karana
+
+ // let val = btn.getAttribute("name"); value ko dhudana
+ // console.log(val);
+
+ // let val = btn.removeAttribute("name"); // property remove karana
+
+ // let val = btn.hasAttribute("name");
+ // console.log(val); // element ko check karana
+
+ // inline-styling
+
+    // btn.style.cssText += "background-color: red; border: 1px green solid"; // styling karana + sign addign both styling
+    /* 
+    btn.style.color = "white";
+    btn.style.background = "blue";
+    btn.style.height = "15%";
+    btn.style.width = "20%";
+    btn.style.fontFamily = "arial";
+    
+    */
+/*
+    let css = getComputedStyle(btn);
+    console.log(css.color);
+    */
+
+   // let box = document.getElementById("box");
+    // console.log(box.className); // class ko find karana
+    // box.className += " dim"; class ko addkarana
+    //console.log(box.classList); // class ko find karana
+    //for(let css of box.classList){   class ko find karana
+    //   console.log(css);
+// }
+
+//box.classList.add("vruttik"); // class ko add karana
+//box.classList.remove("dim");
+//box.classList.replace("color", "dim");
+//let result = box.classList.contains("dim"); //class hai ya nahi ye dhundana
+//console.log(result);
+//box.classList.toggle("dim"); // class hoga to nahi lagega aur nahi hoga to lagega
+
+// let width = box.offsetWidth; // width janani ho to with margin or border
+// let height = box.offsetHeight;// height janani ho to with margin or border
+/*
+let width = box.clientWidth; // original width
+let height = box.clientHeight;// original height
+
+console.log(width);
+console.log(height);
+
+*/
+
+// DOM Events- are actions that occur as a result of the user ation or as result
+// of state change of the element of a DOM tree.
+
+/*
+function noorClick(){
+    alert("button was clicked!");
+}
+
+*/
+// method 1
+function textClick(){
+    alert("button was clicked!");
+}
+// method 2
+let text = document.getElementById("text");
+//text.addEventListener('click',textClick);
+
+//through anonomus function // method 3
+text.addEventListener('click', function(){
+    alert("button was clicked!");
+});
+
+</script>
+
+</body>
+</html>
