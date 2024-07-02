@@ -1,0 +1,23 @@
+function Name() {
+  var arr = new Array(5);
+
+  arr[0] = "50";
+  arr[1] = "10";
+  arr[2] = "30";
+  arr[3] = "40";
+  arr[4] = "20";
+
+  for (let j = 0; j < arr.length - 1; j++) {
+    for (let i = 0; i < arr.length - 1 - j; i++) {
+      if (parseInt(arr[i]) > parseInt(arr[i + 1])) {
+        var temp = arr[i];
+        arr[i] = arr[i + 1];
+        arr[i + 1] = temp;
+      }
+    }
+  }
+
+  for (let i = 0; i < arr.length; i++) {
+    window.document.write(arr[i] + "<br>");
+  }
+}
