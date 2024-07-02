@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <h1>Click any <b>ONE</b> button of your choice!!!</h1>
+
+  <form>
+
+    <input type="button" value="green" onclick= changecolor1() >
+    <input type="button" value="yellow" onclick= changecolor2() >
+    <input type="button" value="orange" onclick= changecolor3() >
+    <input type="button" value="red" onclick= changecolor4() >
+    <input type="button" value="black" onclick= changecolor5() >
+    <input type="button" value="grey" onclick= changecolor6() >
+    <input type="button" value="white" onclick= changecolor7() >
+    <input type="button" value="blue" onclick= changecolor8() >
+    <input type="button" value="pink" onclick= changecolor9() >
+    <input type="button" value="purple" onclick= changecolor10() >
+  </form>
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

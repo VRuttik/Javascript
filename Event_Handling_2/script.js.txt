@@ -1,0 +1,39 @@
+function changecolor1(){
+  document.bgColor = "green";
+}
+
+function changecolor2(){
+  document.bgColor = "yellow";
+}
+
+function changecolor3(){
+  document.bgColor = "orange";
+}
+
+function changecolor4(){
+  document.bgColor = "red";
+}
+
+function changecolor5(){
+  document.bgColor = "black";
+}
+
+function changecolor6(){
+  document.bgColor = "grey";
+}
+
+function changecolor7(){
+  document.bgColor = "white";
+}
+
+function changecolor8(){
+  document.bgColor = "blue";
+}
+
+function changecolor9(){
+  document.bgColor = "pink";
+}
+
+function changecolor10(){
+  document.bgColor ="purple";
+}
