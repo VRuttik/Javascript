@@ -1,0 +1,24 @@
+function validate() {
+  var email = document.getElementById("email").value.indexOf("@");
+  var fname = document.getElementById("name").value;
+  var age = document.getElementById("age").value;
+
+  var submitOK = true;
+
+  if (fname.length > 30) {
+    alert("Name must be less than 30 characters.");
+    submitOK = false;
+  }
+
+  if (isNaN(age) || age < 1 || age > 100) {
+    alert("Age must be a number between 1 and 100.");
+    submitOK = false;
+  }
+
+  if (email === -1) {
+    alert("Not a valid email address.");
+    submitOK = false;
+  }
+
+  return submitOK;
+}
