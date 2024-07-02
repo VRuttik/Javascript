@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onLoad="start()">
+  
+   <br><br><br><br>
+
+  <center>
+    <b><font size=5>
+      Click on STOP button to stop the color changing:
+    </font></b><br>
+
+    <form name="color">
+      <input type="button" style="height: 100;width: 120;shape:circle" value="Stop" onclick="stop()">
+      <br><br><br>
+
+      <b><font size=5>
+        Click on START button to start the color changing again:
+      </font></b><br>
+      <input type="button" style="height: 100;width: 120;" value="Start" onclick="start()">
+      <br><br><br>
+
+      <b><font size=5>
+        Click CLOSE to exit:
+      </font></b><br>
+      <input type="button" style="height: 100;width: 120;" value="Close" onclick="window.close()">
+      <br><br><br>
+
+    </form>
+  </center>
+  
+  
+  <script type="text/javascript" src="script.js"></script>
+</body>
+ 
+</html>
