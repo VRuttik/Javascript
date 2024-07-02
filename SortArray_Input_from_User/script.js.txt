@@ -1,0 +1,32 @@
+var b, i, j;
+
+var a;
+a = [];
+
+document.write("Enter array: ");
+
+for(i=0;i<5;i++){
+  b = prompt("Enter elements:", "i");
+  a[i] = parseInt(b);
+}
+
+for(i=0;i<5;i++){
+  document.write("<br>"+a[i]);
+}
+
+document.write("<br>Sorted Array is:");
+
+for(i=0;i<5;i++){
+  for(j=0;j<i;j++){
+    if(a[i] < a[j]){
+      temp = a[i];
+      a[i] = a[j];
+      a[j] = temp;
+    }
+  }
+}
+
+for(i=0;i<5;i++){
+  document.write("<br>"+a[i]);
+}
+
