@@ -1,0 +1,3 @@
+function check(country) {
+  document.getElementById('answer').value = country;
+}
