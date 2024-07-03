@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Calculator</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body style="background-color: black;">
+
+  <form name="calculator">
+    <center>
+      <table border="1" cellspacing="7" cellpadding="7">
+
+        <tr>
+          <th colspan="3">
+            <input type="text" name="input" value="" size="30">
+          </th>
+        </tr>
+
+        <tr>
+          <td>
+            <input type="button" name="1" value="1" onclick="updatestring('1')">
+          </td>
+          <td>
+            <input type="button" name="2" value="2" onclick="updatestring('2')">
+          </td>
+          <td>
+            <input type="button" name="3" value="3" onclick="updatestring('3')">
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input type="button" name="4" value="4" onclick="updatestring('4')">
+          </td>
+          <td>
+            <input type="button" name="5" value="5" onclick="updatestring('5')">
+          </td>
+          <td>
+            <input type="button" name="6" value="6" onclick="updatestring('6')">
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input type="button" name="7" value="7" onclick="updatestring('7')">
+          </td>
+          <td>
+            <input type="button" name="8" value="8" onclick="updatestring('8')">
+          </td>
+          <td>
+            <input type="button" name="9" value="9" onclick="updatestring('9')">
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input type="button" name="0" value="0" onclick="updatestring('0')">
+          </td>
+          <td>
+            <input type="button" name="+" value="+" onclick="updatestring('+')">
+          </td>
+          <td>
+            <input type="button" name="-" value="-" onclick="updatestring('-')">
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input type="button" name="*" value="*" onclick="updatestring('*')">
+          </td>
+          <td>
+            <input type="button" name="/" value="/" onclick="updatestring('/')">
+          </td>
+          <td>
+            <input type="button" name="=" value="=" onclick="calculateResult()">
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="3">
+            <center>
+              <input type="button" name="clear" value="clear" onclick="clearInput()">
+            </center>
+          </td>
+        </tr>
+
+      </table>
+    </center>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

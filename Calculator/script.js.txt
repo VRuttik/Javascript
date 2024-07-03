@@ -1,0 +1,21 @@
+let inputstring = '';
+
+function updatestring(value) {
+  inputstring += value;
+  document.calculator.input.value = inputstring;
+}
+
+function clearInput() {
+  inputstring = '';
+  document.calculator.input.value = '';
+}
+
+function calculateResult() {
+  try {
+    inputstring = eval(inputstring);
+    document.calculator.input.value = inputstring;
+  } catch (error) {
+    document.calculator.input.value = 'Error';
+    inputstring = '';
+  }
+}
